@@ -16,6 +16,67 @@ Author URL: http://w3layouts.com
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+    <style>
+        .product_slider .owl-item img {
+            width: auto;
+            margin: auto;
+        }
+
+        .product_slider .image img {
+            -moz-transition: all ease 0.7s;
+            -webkit-transition: all ease 0.7s;
+            transition: all ease 0.7s;
+            box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.45);
+        }
+
+        .product_slider a:hover img {
+            -moz-transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+
+        .product_slider a .image {
+            padding: 20px 0 0 0;
+            position: relative;
+            /* overflow: hidden; */
+            display: table;
+            margin: auto;
+        }
+
+        .product_slider h3 {
+            padding: 27px;
+            font-size: 18px;
+            color: #103710;
+            font-weight: 500;
+            letter-spacing: 3px;
+        }
+
+        .product_slider a {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 0 32px;
+            display: block;
+            text-decoration: none;
+            height: 100%;
+        }
+
+        .product_slider a:after {
+            position: absolute;
+            content: "";
+            border: 2px solid #CECECE;
+            width: 100%;
+            bottom: 0px;
+            top: 99px;
+            left: 0px;
+            z-index: -1;
+            background: #FFFFFF;
+        }
+
+        .product_slider a:hover:after {
+            border-color: #103710;
+        }
+    </style>
 </head>
 
 <body>
@@ -94,7 +155,7 @@ Author URL: http://w3layouts.com
     <section class="w3l-main-slider position-relative" id="home">
         <div class="companies20-content">
             <div class="owl-one owl-carousel owl-theme">
-                <div class="item">
+                <!-- <div class="item">
                     <li>
                         <div class="slider-info banner-view bg bg2">
                             <div class="banner-info">
@@ -109,15 +170,21 @@ Author URL: http://w3layouts.com
                             </div>
                         </div>
                     </li>
-                </div>
+                </div> -->
                 <div class="item">
                     <li>
                         <div class="slider-info  banner-view banner-top1 bg bg2">
                             <div class="banner-info">
                                 <div class="container">
                                     <div class="banner-info-bg">
-                                        <h5>About Us</h5>
-                                        <a class="btn btn-style btn-primary mt-md-5 mt-4" href="services.html">
+                                        <h5>Non Basmati Rice</h5>
+                                        <p class="mt-2">
+                                            Sella Rice, Steamed Rice, Brown Rice, Pusa Rice and Parboiled Rice are the
+                                            different types of rice that are exported under Basmati rice category. While
+                                            Parboiled Rice, Broken Rice, Sella Rice, Swarna Rice and Sona Masoori Rice
+                                            are the types that are exported under Non-Basmati Rice category.
+                                        </p>
+                                        <a class="btn btn-style btn-primary mt-3" href="services.html">
                                             View More
                                         </a>
                                     </div>
@@ -133,7 +200,13 @@ Author URL: http://w3layouts.com
                                 <div class="container">
                                     <div class="banner-info-bg">
                                         <h5>Basmati Rice</h5>
-                                        <a class="btn btn-style btn-primary mt-md-5 mt-4" href="services.html">
+                                        <p class="mt-2">
+                                            Basmati, is a variety of long, slender-grained aromatic rice which is
+                                            traditionally grown in India, Pakistan, and Nepal. As of 2019, India
+                                            accounted for 65% of the international trade in basmati rice, while Pakistan
+                                            accounted for the remaining 35%.
+                                        </p>
+                                        <a class="btn btn-style btn-primary mt-3" href="services.html">
                                             View More
                                         </a>
                                     </div>
@@ -148,8 +221,13 @@ Author URL: http://w3layouts.com
                             <div class="banner-info">
                                 <div class="container">
                                     <div class="banner-info-bg">
-                                        <h5>Non Basmati Rice</h5>
-                                        <a class="btn btn-style btn-primary mt-md-5 mt-4" href="services.html">
+                                        <h5>Wheat</h5>
+                                        <p class="mt-2">
+                                            Wheat is a grass widely cultivated for its seed, a cereal grain which is a
+                                            worldwide staple food. The many species of wheat together make up the genus
+                                            Triticum; the most widely grown is common wheat.
+                                        </p>
+                                        <a class="btn btn-style btn-primary mt-3" href="services.html">
                                             View More
                                         </a>
                                     </div>
@@ -164,6 +242,11 @@ Author URL: http://w3layouts.com
     <section class="w3l-bottom-grids-6 py-5">
         <div class="container">
             <div class="row">
+                <div class="col-12 mb-3">
+                    <h1 class="text-center display-4" style="color: #74A629">
+                        Welcome to RMJ international
+                    </h1>
+                </div>
                 <div class="col-12 col-md-8 mx-auto">
                     <p class="text-center">
                         Rathi Agro, Maheshwari Agro & Jagat Agro (RMJ) is one of the reputed manufacturers & Supplier of
@@ -190,8 +273,8 @@ Author URL: http://w3layouts.com
                         constant check of the products at each stage of the production process.
                     </p>
                 </div>
-                <div class="col-lg-6">
-                    <img src="assets/images/rice about.jpg" alt="" class="img-fluid radius-image" />
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="assets/images/rice about.jpg" alt="" class="mt-4 mt-lg-0 img-fluid radius-image" />
                 </div>
             </div>
         </div>
@@ -270,8 +353,176 @@ Author URL: http://w3layouts.com
             </div>
         </div>
     </section>
+
+    <section class="w3l-aboutblock2 py-5">
+        <div class="aboutblock2-info py-lg-5 py-md-4">
+            <!-- aboutblock2-info-->
+            <div class="container">
+                <div class="row aboutblock2-info-inn mx-lg-0">
+                    <div class="col-lg-4 aboutblock-right">
+                        <div class="row aboutblock-right-grids mb-md-5 mb-4">
+                            <div class="col-2 aboutblock-right-icon">
+                                <div class="aboutblock-icon">
+                                    <img src="./assets/images/icons8-wheat-96.png" style="height: 40px;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10 aboutblock-right-info">
+                                <h6><a href="#url">Lorem Ipsum</a></h6>
+                                <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consec
+                                    adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="row aboutblock-right-grids mb-md-5 mb-4">
+                            <div class="col-2 aboutblock-right-icon">
+                                <div class="aboutblock-icon">
+                                    <img src="./assets/images/icons8-wheat-96.png" style="height: 40px;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10 aboutblock-right-info">
+                                <h6><a href="#url">Lorem Ipsum</a></h6>
+                                <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consec
+                                    adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="row aboutblock-right-grids">
+                            <div class="col-2 aboutblock-right-icon">
+                                <div class="aboutblock-icon">
+                                    <img src="./assets/images/icons8-wheat-96.png" style="height: 40px;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10 aboutblock-right-info">
+                                <h6><a href="#url">Lorem Ipsum</a></h6>
+                                <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consec
+                                    adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 aboutblock-left">
+                        <img src="assets/images/rice-euclidean-vector-png-favpng-Me7HfgWPByAdcvATKDZFmu3BC-removebg-preview.png"
+                            class="img-fluid radius-image" alt="">
+                    </div>
+                    <div class="col-lg-4 aboutblock-right">
+                        <div class="row aboutblock-right-grids mb-md-5 mb-4">
+                            <div class="col-2 aboutblock-right-icon">
+                                <div class="aboutblock-icon">
+                                    <img src="./assets/images/icons8-wheat-96.png" style="height: 40px;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10 aboutblock-right-info">
+                                <h6><a href="#url">Lorem Ipsum</a></h6>
+                                <p> Committed to quality & on-time delivery.</p>
+                            </div>
+                        </div>
+                        <div class="row aboutblock-right-grids mb-md-5 mb-4">
+                            <div class="col-2 aboutblock-right-icon">
+                                <div class="aboutblock-icon">
+                                    <img src="./assets/images/icons8-wheat-96.png" style="height: 40px;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10 aboutblock-right-info">
+                                <h6><a href="#url">Lorem Ipsum</a></h6>
+                                <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consec
+                                    adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="row aboutblock-right-grids">
+                            <div class="col-2 aboutblock-right-icon">
+                                <div class="aboutblock-icon">
+                                    <img src="./assets/images/icons8-wheat-96.png" style="height: 40px;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10 aboutblock-right-info">
+                                <h6><a href="#url">Lorem Ipsum</a></h6>
+                                <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consec
+                                    adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- //aboutblock2-info-->
+        </div>
+    </section>
+
+    <section class="ourproducts">
+        <div class="container py-lg-5">
+            <div class="row">
+                <div class="col-lg-4 my-auto">
+                    <h2>Our</h2>
+                    <h1 class="title-big">Products</h1>
+                    <p class="mt-4">
+                        Our commitment to serve quality rice has prompted us to install world class state-of-the-art
+                        rice milling and processing unit
+                    </p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product_slider owl-carousel owl-theme owl-loaded owl-drag">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage"
+                                style="transform: translate3d(-1095px, 0px, 0px); transition: all 1s ease 0s; width: 2190px;">
+                                <div class="owl-item" style="width: 325px; margin-right: 40px;"><a
+                                        href="non-basmati-rice.html" class="item">
+                                        <div class="image">
+                                            <img src="https://www.krishnamohanfoods.in/images/product01.jpg"
+                                                class="img-fluid" alt="Non Basmati Rice">
+                                        </div>
+                                        <h3>BASMATI RICE</h3>
+                                    </a></div>
+                                <div class="owl-item" style="width: 325px; margin-right: 40px;"><a href="pulses.html"
+                                        class="item">
+                                        <div class="image">
+                                            <img src="https://www.krishnamohanfoods.in/images/product01.jpg"
+                                                class="img-fluid" alt="Pulses Manufacturer">
+                                        </div>
+                                        <h3>PULSES</h3>
+                                    </a></div>
+                                <div class="owl-item" style="width: 325px; margin-right: 40px;"><a
+                                        href="non-basmati-rice.html" class="item">
+                                        <div class="image">
+                                            <img src="https://www.krishnamohanfoods.in/images/product01.jpg"
+                                                class="img-fluid" alt="Non Basmati Rice">
+                                        </div>
+                                        <h3>NON-BASMATI RICE</h3>
+                                    </a></div>
+                                <div class="owl-item" style="width: 325px; margin-right: 40px;"><a
+                                        href="non-basmati-rice.html" class="item">
+                                        <div class="image">
+                                            <img src="https://www.krishnamohanfoods.in/images/product01.jpg"
+                                                class="img-fluid" alt="Non Basmati Rice">
+                                        </div>
+                                        <h3>BASMATI RICE</h3>
+                                    </a></div>
+                                <div class="owl-item" style="width: 325px; margin-right: 40px;"><a href="pulses.html"
+                                        class="item">
+                                        <div class="image">
+                                            <img src="https://www.krishnamohanfoods.in/images/product01.jpg"
+                                                class="img-fluid" alt="Pulses Manufacturer">
+                                        </div>
+                                        <h3>PULSES</h3>
+                                    </a></div>
+                                <div class="owl-item" style="width: 325px; margin-right: 40px;"><a
+                                        href="non-basmati-rice.html" class="item">
+                                        <div class="image">
+                                            <img src="https://www.krishnamohanfoods.in/images/product01.jpg"
+                                                class="img-fluid" alt="Non Basmati Rice">
+                                        </div>
+                                        <h3>NON-BASMATI RICE</h3>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <!-- <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
+                                    aria-label="Previous">‹</span></button><button type="button" role="presentation"
+                                class="owl-next"><span aria-label="Next">›</span></button></div>
+                        <div class="owl-dots disabled"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- footers 20 -->
-    <section class="w3l-footers-20">
+    <section class="w3l-footers-20 mt-5 mt-lg-0">
         <div class="footers20">
             <div class="container">
                 <div class="footers20-content">
@@ -481,6 +732,31 @@ Author URL: http://w3layouts.com
             }
         });
 
+        $('.product_slider').owlCarousel({
+            loop: true,
+            margin: 40,
+            responsiveClass: true,
+            nav: false,
+            dots: false,
+            // navText:['<i class="fa fa-arrow-right" aria-hidden="true"></i>',' <i class="fa fa-arrow-left" aria-hidden="true"></i>'],
+            // items: 2,
+            // autoplay: true,
+            // autoplayTimeout: 4000,
+            // smartSpeed: 1000,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                768: {
+                    items: 2,
+                    loop: true,
+
+                },
+
+            }
+        })
         //Main navigation Active Class Add Remove
         $(".navbar-toggler").on("click", function () {
             $("header").toggleClass("active");
